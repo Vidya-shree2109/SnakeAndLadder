@@ -8,7 +8,7 @@ namespace SnakeAndLadder
 {
     public class SnakeAndLadderGame
     {
-        int position = 0;
+        int position = 0, count = 0;
         const int NO_PLAY = 0, SNAKE = 1, LADDER = 2;
         public int DieRoll()
         {
@@ -43,8 +43,10 @@ namespace SnakeAndLadder
                         }
                         break;
                 }
+                Console.WriteLine("The position after every die roll is : " + this.position);
+                count++;
             }
-            Console.WriteLine("The position is " + this.position);
+            Console.WriteLine("The number of times the dice played : " + count++);
         }
     }
 }
