@@ -7,6 +7,8 @@ namespace SnakeAndLadder
         {
             SnakeAndLadderGame game = new SnakeAndLadderGame();
             Console.WriteLine("The Die rolled number is " + game.DieRoll());
+            game.Game();
         }
+
     }
 }
