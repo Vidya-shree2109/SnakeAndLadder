@@ -11,9 +11,6 @@ namespace SnakeAndLadder
         Player P1 = new Player();
         Player P2 = new Player();
         Random random = new Random();
-        /// <summary>
-        /// Starts the game
-        /// </summary>
         public void start()
         {
             while (P1.position < 100 && P2.position < 100)

@@ -9,9 +9,6 @@ public class Player
     public static Random random = new Random();
     public int roll;
     public int totalRoll;
-    /// <summary>
-    /// Moves the player
-    /// </summary>
     public void Move(int movement)
     {
         position += movement;
@@ -33,16 +30,10 @@ public class Player
         Move(roll);
         Option();
     }
-    /// <summary>
-    /// Displays player position
-    /// </summary>
     public void Display()
     {
         Console.WriteLine("Player position: " + position);
     }
-    /// <summary>
-    /// Options for snake and ladder
-    /// </summary>
     public void Option()
     {
         int option = random.Next(0, 3);
