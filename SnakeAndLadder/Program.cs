@@ -18,9 +18,6 @@ public class Player
             Console.WriteLine("You crossed 100 so moving back to last position");
         }
     }
-    /// <summary>
-    /// Rolls the dice
-    /// </summary>
     public void RollDice()
     {
         roll = random.Next(1, 7);
